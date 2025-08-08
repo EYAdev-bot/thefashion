@@ -2,7 +2,7 @@
 
 session_start();
 
-$servername = "sql302.infinity.com";
+$servername = "sql302.infinityfree.com";
 $dbname = "if0_39664675_thefashion";
 $username = "root";
 $password = "";
