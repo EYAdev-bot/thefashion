@@ -16,10 +16,7 @@ $page_functions = scandir("functions/");
 if (in_array($page . ".func.php", $page_functions)) {
     include "functions/" . $page . ".func.php";
 }
-$styles = scandir("css/");
-if (in_array($page . '.css', $styles)) {
-    $style = $page . ".css";
-}
+
 ?>
 
 
