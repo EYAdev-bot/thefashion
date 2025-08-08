@@ -2,28 +2,24 @@
 
 session_start();
 
-$servername = "sql302.infinityfree.com";
-$dbname = "if0_39664675_thefashion";
-$username = "if0_39664675";
-$password = "o6xDPCkHaWi2";
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname; $username,$password");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Une erreur est survenue lors de la connexion a la base de donnée' . $e->getMessage();
-}
+    $servername = "mysql-ekanga.alwaysdata.net";
+    $dbname = "ekanga_thefashion";
+    $username = "ekanga";
+    $password = "670670178";
 
-if (isset($_POST['subscribe'])) {
-    $email=$_POST['mail'];
 
     try {
-        $stmt=$conn->prepare("INSERT INTO subcriber (emails) VALUE (:email)");
-        $stmt->bindParam(':email',$email);
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $stmt = $conn->prepare("SELECT * FROM posts");
         $stmt->execute();
-        $message="";
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
-        echo "error".$e->getMessage();
+        echo "Erreur lors de la récupération des posts : " . $e->getMessage();
+        return [];
     }
-}
+
 ?>
