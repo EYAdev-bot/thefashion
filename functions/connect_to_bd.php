@@ -4,8 +4,8 @@ session_start();
 
 $servername = "sql302.infinityfree.com";
 $dbname = "if0_39664675_thefashion";
-$username = "root";
-$password = "";
+$username = "if0_39664675";
+$password = "o6xDPCkHaWi2";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname; $username,$password");
