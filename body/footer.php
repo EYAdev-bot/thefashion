@@ -1,4 +1,4 @@
-<footer class="border-t-2 border-solide border-black p-6 mt-6">
+<footer class="border-t-2 border-solide border-black md:p-6 mt-6 w-[100%]">
     <ul class="flex justify-center gap-8">
         <li><a href="">Home</a></li>
         <li><a href="">Blog</a></li>

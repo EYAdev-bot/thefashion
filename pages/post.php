@@ -8,14 +8,14 @@ if ($post == false) {
 
 <div class="mt-[30px] ">
     <div class="flex  justify-center flex-col items-center">
-        <img class="w-[75%] h-[50%]" src="admin/upload/<?= $post->image ?>" alt="<?= $post->title ?>">
-        <h1 class="md:text-[30px] w-[75%] md:px-16 p-4">
+        <img class="md:w-[75%] md:h-[50%] w-full " src="admin/upload/<?= $post->image ?>" alt="<?= $post->title ?>">
+        <h1 class="md:text-[30px] w-[95%] md:px-16 p-4">
             <?= strtoupper($post->title) ?>
         </h1>
 
 
 
-        <div class=" md:px-16 w-[75%] break-words whitespace-normal p-4">
+        <div class=" md:px-16 w-[95%] break-words whitespace-normal p-4">
             <?= $post->content ?>
         </div>
 

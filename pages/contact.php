@@ -41,25 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<body>
 
     <!-- Debut formulaire contact-->
     <section class="w-4/5 max-w-[1200px] mx-auto p-8">
         <div class="flex flex-col md:flex-row bg-white rounded-2xl shadow-md overflow-hidden">
             <div class="flex-1 max-w-full md:max-w-[50%] p-8 flex flex-col">
                 <h2 class="mb-6 text-gray-800 text-xl font-bold">Contactez-nous</h2>
-                <form class="flex flex-col h-full" method="post" action="">
+                <form class="flex flex-col md:h-full w-full" method="post" action="">
                     <div class="mb-4">
                         <label for="name" class="block mb-2 font-bold">Nom</label>
                         <input type="text" id="name" name="nom" placeholder="Entrez votre nom" required
@@ -89,6 +78,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
     <!-- Fin formulaire contact-->
 
-</body>
-
-</html>

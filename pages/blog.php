@@ -16,15 +16,15 @@ $posts = get_post();
    <?php
    foreach ($posts as $post) {
    ?>
-      <div class=" flex justify-between px-10 mt-4">
+      <div class=" md:flex md:flex-row md:justify-between mb-10 flex-col items-center md:px-10">
          <div>
-            <img src="admin/upload/<?= $post->image ?>" alt="" class=" h-[25rem] w-[35rem] ">
+            <img src="admin/upload/<?= $post->image ?>" alt="" class=" md:h-[25rem] md:w-[35rem] w-[100%] h-[45%] ">
          </div>
-         <div class=" flex-col flex gap-8 justify-center">
+         <div class=" flex-col flex md:gap-8 gap-2 justify-center">
             <i>Business Tips</i>
-            <h2 class="text-2xl w-[500px]  inline"><?= $post->title ?></h2>
-            <div class="w-[500px] break-words whitespace-normal"><?= substr(nl2br(strip_tags($post->content)), 0, 200) ?></div>
-            <a href="?page=post&id=<?= $post->id ?>" class="font-[tohoma] font-[300]">READ ARTICLE</a>
+            <h2 class="text-2xl md:w-[500px] w-[100%] p-2  inline"><?= $post->title ?></h2>
+            <div class="md:w-[500px] w-screen break-words whitespace-normal p-2"><?= substr(nl2br(strip_tags($post->content)), 0, 200) ?></div>
+            <a href="?page=post&id=<?= $post->id ?>" class="font-[tohoma] font-[300] p-2 text-blue-600">READ ARTICLE</a>
          </div>
       </div>
 

@@ -41,7 +41,7 @@ if (isset($_POST['sub'])) {
     $video = $_POST["video"];
 
     // Vérifier que les champs sont remplis
-    if (!empty($title) && !empty($content) && !empty($writer) && !empty($image_file) && !empty($video)) {
+    if (!empty($title) && !empty($content)  && !empty($image_file) && !empty($video)) {
         comments($title, $content, $writer, $image_file, $video);
     } else {
         die("Tous les champs doivent être remplis !");

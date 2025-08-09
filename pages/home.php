@@ -2,10 +2,10 @@
 $posts = get_post();
 ?>
 
-<div class="bg-zinc-200 p-12 ">
+<div class="bg-zinc-200 md:p-12 w-[100%]">
 
 
-   <h1 class="capitalize text-center text-5xl font-[serif] mb-4">
+   <h1 class="capitalize text-center text-5xl font-[serif] mb-4  ]">
       <span class="uppercase text-xl pb-4">welcome to</span> <br>
       the daily tech home
    </h1>
@@ -42,14 +42,14 @@ $posts = get_post();
 
 
 
-      <div class=" flex justify-between px-10">
+      <div class=" md:flex md:flex-row md:justify-between flex-col items-center md:px-10">
          <div>
-            <img src="admin/upload/<?= $post->image ?>" alt="" class=" h-[25rem] w-[35rem] ">
+            <img src="admin/upload/<?= $post->image ?>" alt="" class=" md:h-[25rem] md:w-[35rem] w-[100%] h-[45%] ">
          </div>
          <div class=" flex-col flex gap-8 justify-center">
             <i>Business Tips</i>
-            <h2 class="text-2xl w-[500px]  inline"><?= $post->title ?></h2>
-            <div class="w-[500px] break-words whitespace-normal"><?= substr(nl2br(strip_tags($post->content)), 0, 200) ?></div>
+            <h2 class="text-2xl md:w-[500px] w-[100%] p-2  inline"><?= $post->title ?></h2>
+            <div class="md:w-[500px] w-screen break-words whitespace-normal p-2"><?= substr(nl2br(strip_tags($post->content)), 0, 200) ?></div>
             <a href="?page=post&id=<?= $post->id ?>" class="font-[tohoma] font-[300]">READ ARTICLE</a>
          </div>
       </div>
