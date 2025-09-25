@@ -18,7 +18,7 @@ $posts = get_post();
    ?>
       <div class=" md:flex md:flex-row md:justify-between mb-10 flex-col items-center md:px-10">
          <div>
-            <img src="admin/upload/<?= $post->image ?>" alt="" class=" md:h-[25rem] md:w-[35rem] w-[100%] h-[45%] ">
+            <img src="https://the-fashionadmin.onrender.com/upload/<?= $post->image ?>" alt="" class=" md:h-[25rem] md:w-[35rem] w-[100%] h-[45%] ">
          </div>
          <div class=" flex-col flex md:gap-8 gap-2 justify-center">
             <i>Business Tips</i>

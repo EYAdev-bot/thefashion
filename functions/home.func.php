@@ -13,7 +13,7 @@ function get_post() {
                                 ON post.writer=admins.emails
                                 WHERE posted='1'
                                 ORDER BY date DESC
-                                LIMIT 0,2
+                                
                     ");
     $req->execute();
 

@@ -36,7 +36,7 @@ if (in_array($page . ".func.php", $page_functions)) {
     <link href="https://fonts.googleapis.com/css2?family=poppins:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
 
-<body class=" bg-[#FAF9F7] font-[poppins]">
+<body class=" bg-[#F9FBFF] font-[poppins]">
     <?php
     include "body/topbar.php"
     ?>
