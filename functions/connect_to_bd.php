@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+ob_start();
 
     $servername = "mysql-ekanga.alwaysdata.net";
     $dbname = "ekanga_thefashion";
